@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeAlpha Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Responsive Image Gallery</h1>
+      <p>CodeAlpha Frontend Development - Task 1</p>
+    </div>
+  </header>
+
+  <main class="gallery-section">
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="city">City</button>
+      <button class="filter-btn" data-filter="animals">Animals</button>
+      <button class="filter-btn" data-filter="travel">Travel</button>
+    </div>
+
+    <div class="gallery" id="gallery">
+      <div class="gallery-item" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80" alt="Nature Image 1">
+      </div>
+      <div class="gallery-item" data-category="city">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="City Image 1">
+      </div>
+      <div class="gallery-item" data-category="animals">
+        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80" alt="Animal Image 1">
+      </div>
+      <div class="gallery-item" data-category="travel">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Travel Image 1">
+      </div>
+      <div class="gallery-item" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80" alt="Nature Image 2">
+      </div>
+      <div class="gallery-item" data-category="city">
+        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=900&q=80" alt="City Image 2">
+      </div>
+      <div class="gallery-item" data-category="animals">
+        <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=900&q=80" alt="Animal Image 2">
+      </div>
+      <div class="gallery-item" data-category="travel">
+        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=900&q=80" alt="Travel Image 2">
+      </div>
+    </div>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close" id="closeBtn">&times;</span>
+    <button class="nav prev" id="prevBtn">&#10094;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="Preview">
+    <button class="nav next" id="nextBtn">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
